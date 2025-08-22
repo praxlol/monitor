@@ -8,6 +8,6 @@ services:
   dozzle:
     image: amir20/dozzle:latest
     environment:
-      - DOZZLE_REMOTE_AGENT=${agent-ip:?error}:7007
+      - DOZZLE_REMOTE_AGENT=${agent_ip:?error}:7007
     ports:
       - 8888:8888 # Dozzle UI port
