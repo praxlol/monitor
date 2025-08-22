@@ -13,3 +13,4 @@ services:
       - 8888:8080 # Dozzle UI port
     networks:
       - dozzle
+    restart: unless-stopped
