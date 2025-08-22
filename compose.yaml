@@ -1,0 +1,13 @@
+name: monitor_stack
+
+networks:
+  dozzle:
+    external: true
+
+services:
+  dozzle:
+    image: amir20/dozzle:latest
+    environment:
+      - DOZZLE_REMOTE_AGENT=agent:7007
+    ports:
+      - 8888:8888 # Dozzle UI port
