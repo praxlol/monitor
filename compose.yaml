@@ -10,6 +10,6 @@ services:
     environment:
       - DOZZLE_REMOTE_AGENT=${agent_ip:?error}:7007
     ports:
-      - 8888:8888 # Dozzle UI port
+      - 8888:8080 # Dozzle UI port
     networks:
       - dozzle
